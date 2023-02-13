@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block header %}
+<title>Shows Database</title>
+{% endblock %}
+
+{% block body %}
+<div class="center">
+<h1 class="title">
+    Shows Database
+</h1>
+<p>
+    Search for information about your favorite show!
+    <form action="/search">
+        <input type="text" name="film" placeholder="Enter film's name.">
+        <button type="submit">Search</button>
+    </form>
+</p>
+<img src="../static/images/film.png" >
+</div>
+{% endblock %}

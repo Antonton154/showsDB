@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block header %}
+<title>{{result[1]}}</title>
+{% endblock %}
+
+{% block body %}
+<p>Showing information for:</p>
+<img src="{{url}}" class = "illus">
+<h1>{{result[1]}} ({{result[2]}})</h1>
+<h3>ID: {{result[0]}}</h3>
+<div>
+<h2><span>Episodes:</span> {{result[3]}}</h2>
+<h2><span>Genres:</span> {{result[5]}}</h2>
+<h2><span>Rating:</span> {{result[4]}} ({{result[6]}} votes)</h2>
+<h2><span>Writers:</span> {{writers}}</h2>
+<h2><span>Actors:</span> {{actors}}</h2>
+</div>
+<br>
+<button class="back-button" onclick="history.back()"> < Go back</button>
+{% endblock %}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link rel="stylesheet" href="../static/style.css">
+
+        {% block header %}
+        {% endblock %}
+    </head>
+    <header>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+        <br>
+    </header>
+    <body>
+        <div class = "margin">
+        {% block body %}
+        {% endblock %}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        </div>
+    </body>
+    <footer>
+        @Copyright Nguyen Ngo Anh Tuan 2022 - All Right Reserved.  
+    </footer>
+</html>
